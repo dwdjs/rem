@@ -1,4 +1,10 @@
-(function flexible (window, document) {
+/**
+ * flexible
+ * @see https://github.com/amfe/lib-flexible
+ * @param designWidth 设计师起稿宽度
+ * @param pxPerRem 每个1rem多少px
+ */
+export default function flexible (designWidth = 750, pxPerRem = 100) {
   var docEl = document.documentElement
   var dpr = window.devicePixelRatio || 1
 
@@ -13,9 +19,9 @@
   }
   setBodyFontSize();
 
-  // set 1rem = viewWidth / 10
+  // set 1rem = viewWidth / (10)
   function setRemUnit () {
-    var rem = docEl.clientWidth / 10
+    var rem = docEl.clientWidth / (designWidth / pxPerRem)
     docEl.style.fontSize = rem + 'px'
   }
 
@@ -41,4 +47,4 @@
     }
     docEl.removeChild(fakeBody)
   }
-}(window, document))
+}

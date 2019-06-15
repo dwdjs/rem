@@ -1,6 +1,6 @@
 {
   "name": "amfe-flexible",
-  "version": "2.2.1",
+  "version": "2.3.1",
   "description": "Build flexible page on mobile platform",
   "keywords": [
     "lib",
@@ -23,11 +23,12 @@
     }
   ],
   "scripts": {
-    "compress": "uglifyjs index.js -o index.min.js -c -m"
+    "build": "rollup -c"
   },
   "dependencies": {},
   "devDependencies": {
-    "uglify-js": "^3.0.27"
+    "rollup": "^1.15.5",
+    "rollup-plugin-terser": "^5.0.0"
   },
   "license": "MIT"
 }
