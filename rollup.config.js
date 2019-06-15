@@ -4,9 +4,9 @@ import { terser } from "rollup-plugin-terser";
 const config = {
   input: 'index.js',
   output: {
+    name: 'flexible',
     file: 'dist/index.js',
-    format: 'umd',
-    name: 'flexible'
+    format: 'umd'
   },
   plugins: [
     babel({
@@ -18,7 +18,8 @@ const config = {
 const minifyConfig = Object.assign({}, config, {
   output: {
     ...config.output,
-    file: 'dist/index.min.js'
+    file: 'dist/index.min.js',
+    sourcemap: true
   },
   plugins: [
     ...config.plugins,
