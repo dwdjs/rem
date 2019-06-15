@@ -21,6 +21,5 @@ package-lock.json
 
 # Distribution
 coverage/
-dist/
 docs/
 *.iml

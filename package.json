@@ -1,5 +1,6 @@
 {
-  "name": "amfe-flexible",
+  "name": "shinvey-flexible",
+  "main": "index.js",
   "version": "2.3.1",
   "description": "Build flexible page on mobile platform",
   "keywords": [
@@ -11,23 +12,24 @@
     "rem",
     "vw"
   ],
-  "homepage": "https://github.com/amfe/lib-flexible",
+  "homepage": "https://github.com/shinvey/lib-flexible",
   "repository": {
     "type": "git",
-    "url": "git@github.com:amfe/lib-flexible.git"
+    "url": "git@github.com:shinvey/lib-flexible.git"
   },
-  "author": [
-    {
-      "name": "mingelz",
-      "email": "mingelz@gmail.com"
-    }
-  ],
+  "author": {
+    "name": "mingelz",
+    "email": "mingelz@gmail.com"
+  },
   "scripts": {
     "build": "rollup -c"
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "rollup": "^1.15.5",
+    "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-terser": "^5.0.0"
   },
   "license": "MIT"
