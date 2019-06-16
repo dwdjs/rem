@@ -1,4 +1,4 @@
-# shinvey-flexible
+# amfe-flexible
 
 [Classic edition (0.3.2)](https://github.com/shinvey/lib-flexible/tree/master)
 
