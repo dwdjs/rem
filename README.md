@@ -6,15 +6,23 @@
 
 ## Usage
 
-#### Install
+### 选择unpkg
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script src="//unpkg.com/shinvey-flexible@2.3.3/dist/index.min.js"></script>
+<script>
+  // 设计稿宽度为750px，每1rem等于100px
+  flexible(750, 100)
+</script>
+```
+
+### 选择npm包
 
 ```bash
 npm i shinvey-flexible
 ```
-#### Import
 
-在HTML中使用
-
+HTML中引入
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 <script src="./node_modules/shinvey-flexible/dist/index.min.js"></script>
@@ -24,8 +32,7 @@ npm i shinvey-flexible
 </script>
 ```
 
-在es6项目中使用
-
+在es6项目中引入
 ```js
 import flexible from 'shinvey-flexible'
 flexible(750, 100)
