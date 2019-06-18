@@ -1,4 +1,8 @@
-# amfe-flexible
+# rem-flexible（Original name is amfe-flexible）
+
+Firstly, Let's show respect to original author.
+
+This package published with some minor changes, The main function flexible can be passed two optional arguments. The first is design width, The second is pixel per rem.
 
 [Classic edition (0.3.2)](https://github.com/shinvey/lib-flexible/tree/master)
 
@@ -9,7 +13,7 @@
 ### 选择unpkg
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<script src="//unpkg.com/shinvey-flexible@2.3.3/dist/index.min.js"></script>
+<script src="//unpkg.com/rem-flexible@2.1.0/dist/index.min.js"></script>
 <script>
   // 设计稿宽度为750px，每1rem等于100px
   flexible(750, 100)
@@ -19,13 +23,13 @@
 ### 选择npm包
 
 ```bash
-npm i shinvey-flexible
+npm i rem-flexible
 ```
 
 HTML中引入
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<script src="./node_modules/shinvey-flexible/dist/index.min.js"></script>
+<script src="./node_modules/rem-flexible/dist/index.min.js"></script>
 <script>
   // 设计稿宽度为750px，每1rem等于100px
   flexible(750, 100)
@@ -34,7 +38,7 @@ HTML中引入
 
 在es6项目中引入
 ```js
-import flexible from 'shinvey-flexible'
+import flexible from 'rem-flexible'
 flexible(750, 100)
 ````
 
