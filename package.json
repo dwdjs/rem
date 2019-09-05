@@ -27,6 +27,7 @@
   },
   "scripts": {
     "dev": "npx http-server -p 8090 -o ./examples",
+    "prepublish": "npm run build",
     "build": "rollup -c"
   },
   "dependencies": {},
