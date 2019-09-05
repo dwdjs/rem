@@ -5,15 +5,14 @@
  * @param pxPerRem 每个1rem多少px
  */
 export default function flexible (designWidth = 750, pxPerRem = 100) {
-  var docEl = document.documentElement
-  var dpr = window.devicePixelRatio || 1
+  const docEl = document.documentElement
+  const dpr = window.devicePixelRatio || 1
 
   // adjust body font size
   function setBodyFontSize () {
     if (document.body) {
       document.body.style.fontSize = (12 * dpr) + 'px'
-    }
-    else {
+    } else {
       document.addEventListener('DOMContentLoaded', setBodyFontSize)
     }
   }
@@ -21,7 +20,10 @@ export default function flexible (designWidth = 750, pxPerRem = 100) {
 
   // set 1rem = viewWidth / (10)
   function setRemUnit () {
-    var rem = docEl.clientWidth / (designWidth / pxPerRem)
+    let { clientWidth } = docEl
+    // if (minAdaptWidth && clientWidth < minAdaptWidth) clientWidth = minAdaptWidth
+    // if (maxAdaptWidth && clientWidth < maxAdaptWidth) clientWidth = maxAdaptWidth
+    const rem = clientWidth / (designWidth / pxPerRem)
     docEl.style.fontSize = rem + 'px'
   }
 
@@ -37,8 +39,8 @@ export default function flexible (designWidth = 750, pxPerRem = 100) {
 
   // detect 0.5px supports
   if (dpr >= 2) {
-    var fakeBody = document.createElement('body')
-    var testElement = document.createElement('div')
+    const fakeBody = document.createElement('body')
+    const testElement = document.createElement('div')
     testElement.style.border = '.5px solid transparent'
     fakeBody.appendChild(testElement)
     docEl.appendChild(fakeBody)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,body,p{margin: 0;padding: 0;}
+    body{background: #eee; padding-bottom: 0.5rem;}
+    .box {margin: 0.2rem auto; width: 2rem; height: 2rem; border: 1px solid green; }
+    .box p{font-size: 0.14rem; line-height: 1.5; margin: 0.1rem;}
+
+    .toolbar { overflow: hidden; position: fixed; width: 100%; bottom: 0;
+    left: 0; z-index: 100; display: flex; border-top: 1px solid blue;}
+    .toolbar .item { height: 2.8em; flex: 1; background: #ccc; border: 0.01rem solid red;}
+    @media screen and (max-width: 640px) {
+      .toolbar .item { height: 13.33333vw; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <p>盒子宽高200*200 px; 字体 14 px;外间距 20 px; 居中显示</p>
+    <p>底部 toolbar，设计稿高度 100px，实际实现 50 px; 高度不自适应变化</p>
+  </div>
+
+  <div class="toolbar">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+
+  <script src="../dist/index.js"></script>
+  <script>
+  // 缩放使用设计稿参照宽度为376px，每1rem等于100px
+  // 具体实现使用设计稿(750版本)的元素尺寸除以 2
+  flexible(375, 100)
+  </script>
+</body>
+</html>

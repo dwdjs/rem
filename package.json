@@ -12,6 +12,10 @@
     "rem",
     "vw"
   ],
+  "files": [
+    "./README.md",
+    "dist"
+  ],
   "homepage": "https://github.com/shinvey/lib-flexible",
   "repository": {
     "type": "git",
@@ -22,15 +26,16 @@
     "email": "mingelz@gmail.com"
   },
   "scripts": {
+    "dev": "npx http-server -p 8090 -o ./examples",
     "build": "rollup -c"
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "rollup": "^1.15.5",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-terser": "^5.0.0"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "rollup": "^1.20.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.1"
   },
   "license": "MIT"
 }
