@@ -16,10 +16,10 @@
     "./README.md",
     "dist"
   ],
-  "homepage": "https://github.com/shinvey/lib-flexible",
+  "homepage": "https://github.com/dwdjs/rem-flexible",
   "repository": {
     "type": "git",
-    "url": "git@github.com:shinvey/lib-flexible.git"
+    "url": "git@github.com:dwdjs/rem-flexible.git"
   },
   "author": {
     "name": "mingelz",
