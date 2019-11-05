@@ -1,7 +1,7 @@
 {
   "name": "@dwdjs/rem",
   "main": "dist/index.js",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "Build flexible page on mobile platform",
   "keywords": [
     "lib",
