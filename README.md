@@ -1,5 +1,9 @@
 # rem-flexible（Original name is amfe-flexible）
 
+```bash
+npm publish --access=public
+```
+
 Firstly, Let's show respect to original author.
 
 This package published with some minor changes, The main function flexible can be passed two optional arguments. The first is design width, The second is pixel per rem.
@@ -11,6 +15,7 @@ This package published with some minor changes, The main function flexible can b
 ## Usage
 
 ### 选择unpkg
+
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 <script src="//unpkg.com/rem-flexible@2.1.0/dist/index.min.js"></script>
@@ -27,6 +32,7 @@ npm i rem-flexible
 ```
 
 HTML中引入
+
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 <script src="./node_modules/rem-flexible/dist/index.min.js"></script>
@@ -37,6 +43,7 @@ HTML中引入
 ```
 
 在es6项目中引入
+
 ```js
 import flexible from 'rem-flexible'
 flexible(750, 100)
