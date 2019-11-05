@@ -4,7 +4,7 @@
  * @param designWidth 设计师起稿宽度
  * @param pxPerRem 每个1rem多少px
  */
-export default function flexible (designWidth = 750, pxPerRem = 100) {
+export default function flexible(designWidth = 750, pxPerRem = 100) {
   const docEl = document.documentElement
   const dpr = window.devicePixelRatio || 1
 
