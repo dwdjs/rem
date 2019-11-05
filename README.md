@@ -1,9 +1,5 @@
 # rem-flexible（Original name is amfe-flexible）
 
-```bash
-npm publish --access=public
-```
-
 Firstly, Let's show respect to original author.
 
 This package published with some minor changes, The main function flexible can be passed two optional arguments. The first is design width, The second is pixel per rem.
@@ -28,14 +24,14 @@ This package published with some minor changes, The main function flexible can b
 ### 选择npm包
 
 ```bash
-npm i rem-flexible
+npm i @dwdjs/rem
 ```
 
 HTML中引入
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<script src="./node_modules/rem-flexible/dist/index.min.js"></script>
+<script src="./node_modules/@dwdjs/rem/dist/index.min.js"></script>
 <script>
   // 设计稿宽度为750px，每1rem等于100px
   flexible(750, 100)
@@ -45,7 +41,7 @@ HTML中引入
 在es6项目中引入
 
 ```js
-import flexible from 'rem-flexible'
+import flexible from '@dwdjs/rem'
 flexible(750, 100)
 ````
 
