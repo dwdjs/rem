@@ -45,6 +45,8 @@ import flexible from '@dwdjs/rem'
 flexible(750, 100)
 ````
 
+可以借助 [postcss-pxtorem](https://www.npmjs.com/package/postcss-pxtorem) 插件实现编译时将 px 单位转为 rem 单位
+
 You can inline this file with [inline-source](https://npmjs.org/package/inline-source).
 
 #### Develop
